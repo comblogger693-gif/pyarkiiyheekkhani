@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preparing Download...</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .loader {
+      border: 8px solid #2c2c2c;
+      border-top: 8px solid #ff3c78;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1.2s linear infinite;
+      margin-bottom: 24px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons a {
+      padding: 12px 20px;
+      background: #ff3c78;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #ff1c60;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <h2>Your download is almost ready...</h2>
+  <div class="buttons">
+    <a id="downloadBtn" href="https://drive.google.com/file/d/1YV4fDtE1OVqr9-M5h7U7q3LgeGWjPUY3/view?usp=sharing" target="_blank">⬇️ Download</a>
+    <a id="watchBtn" href="https://drive.google.com/file/d/1YV4fDtE1OVqr9-M5h7U7q3LgeGWjPUY3/view?usp=sharing" target="_blank">▶️ Watch</a>
+  </div>
+</body>
+</html>

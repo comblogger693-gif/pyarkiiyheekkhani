@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>PKYEK – Season 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="episodes.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1>Pyaar Kii Yeh Ek Kahani</h1>
+      <p>Season 1 – 300+ Episodes</p>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search Episode..." />
+      <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="watched">Watched</option>
+        <option value="unwatched">Unwatched</option>
+      </select>
+    </div>
+
+    <div id="episodeList" class="episode-list"></div>
+
+    <div class="pagination">
+      <button id="prevPage">⟨ Prev</button>
+      <span id="pageInfo">Page 1</span>
+      <button id="nextPage">Next ⟩</button>
+    </div>
+  </div>
+</body>
+</html>
