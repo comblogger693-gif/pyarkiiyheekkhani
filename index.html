@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="monetag" content="fa4f0ebaca363b7570fcdb90dcf9e4bc">
   <title>PKYEK – Season 1</title>
   <link rel="stylesheet" href="style.css" />
   <script src="episodes.js" defer></script>
@@ -33,26 +32,5 @@
       <button id="nextPage">Next ⟩</button>
     </div>
   </div>
-
-  <!-- Monetag Popunder Ad Script -->
-  <script type="text/javascript">
-    atOptions = {
-      'key': 'your_ad_key_here', // Replace with real ad key from Monetag
-      'format': 'popunder',
-      'height': 600,
-      'width': 800,
-      'params': {}
-    };
-    document.write('<script type="text/javascript" src="//yourdomain.monetag.com/' + atOptions.key + '/invoke.js"><\/script>');
-  </script>
-
-  <!-- Monetag Service Worker Registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('✅ Monetag service worker registered:', reg.scope))
-        .catch(err => console.error('❌ Monetag SW registration failed:', err));
-    }
-  </script>
 </body>
 </html>
